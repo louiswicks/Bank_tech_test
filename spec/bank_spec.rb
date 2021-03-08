@@ -19,12 +19,21 @@ describe BankAccount do
   end
 
   describe '#withdraw' do
-      it 'should decrease account balance by a specified amount' do
-        account = BankAccount.new
-        account.deposit(10)
-        account.withdraw(3)
-        expect(account.balance).to eq(7)
-      end
+    it 'should decrease account balance by a specified amount' do
+      account = BankAccount.new
+      account.deposit(10)
+      account.withdraw(3)
+      expect(account.balance).to eq(7)
     end
+  end
 
+  describe '#statement' do
+    it 'should print a history of your banking activity' do
+      account = BankAccount.new
+      account.deposit(10)
+      account.withdraw(3)
+      expect(account.statement()).to include('7')
+    end
+  end
+#Time.now.strftime("%k:%M on %d/%m/%Y")
 end

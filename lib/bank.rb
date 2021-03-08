@@ -13,6 +13,10 @@ class BankAccount
 
   def withdraw(amount)
     @balance -= amount
-  end 
+  end
+
+  def statement()
+    "Account balance: #{@balance}"
+  end
 
 end
