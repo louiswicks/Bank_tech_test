@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'bank'
 
 describe BankAccount do
@@ -8,9 +6,17 @@ describe BankAccount do
   end
 
   describe '#deposit' do
-    it 'should return amount' do
+    it 'should return an amount' do
       account = BankAccount.new
       expect(account.deposit(10)).to eq(10)
     end
+
+    it 'should increase account balance by amount' do
+      account = BankAccount.new
+      account.deposit(10)
+      expect(account.balance).to eq(10)
+    end 
+
   end
+
 end

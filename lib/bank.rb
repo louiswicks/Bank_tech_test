@@ -1,8 +1,14 @@
-# frozen_string_literal: true
-
 # new BankAccount class
 class BankAccount
-  def deposit(amount)
-    amount
+
+  attr_reader :balance
+
+  def initialize
+    @balance = 0
   end
+
+  def deposit(amount)
+    @balance += amount
+  end
+
 end
