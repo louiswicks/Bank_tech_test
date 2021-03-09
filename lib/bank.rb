@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 # new BankAccount class
 class BankAccount
-
   attr_reader :balance
 
   def initialize
@@ -18,22 +19,22 @@ class BankAccount
     save_debit_transaction(amount)
   end
 
-  def statement()
+  def statement
     print_header
     output = @transactions.reverse.map do |transaction|
       puts "#{transaction[0]} || #{format(transaction[1])} || #{format(transaction[2])} || #{format(transaction[3])}"
     end
-    puts output.join("")
+    puts output.join('')
   end
 
   private
 
-  def print_header()
-    puts "Date || Credit || Debit || Balance"
+  def print_header
+    puts 'Date || Credit || Debit || Balance'
   end
 
   def format(number)
-    number == 0 ? "" : '%.2f' % number
+    number.zero? ? '' : '%.2f' % number
   end
 
   def increase_balance(amount)
@@ -45,11 +46,10 @@ class BankAccount
   end
 
   def save_credit_transaction(amount)
-      @transactions << [Time.now.strftime("%d/%m/%Y"), amount, 0, @balance]
+    @transactions << [Time.now.strftime('%d/%m/%Y'), amount, 0, @balance]
   end
 
   def save_debit_transaction(amount)
-    @transactions << [Time.now.strftime("%d/%m/%Y"), 0, -amount, @balance]
+    @transactions << [Time.now.strftime('%d/%m/%Y'), 0, -amount, @balance]
   end
-
 end
