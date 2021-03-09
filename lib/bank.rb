@@ -21,7 +21,7 @@ class BankAccount
   def statement()
     print_header
     output = @transactions.reverse.map do |transaction|
-      puts "#{transaction[0]} || #{transaction[1]} || #{transaction[2]} || #{transaction[3]}"
+      puts "#{transaction[0]} || #{format(transaction[1])} || #{format(transaction[2])} || #{format(transaction[3])}"
     end
     puts output.join("")
   end
@@ -30,6 +30,10 @@ class BankAccount
 
   def print_header()
     puts "Date || Credit || Debit || Balance"
+  end
+
+  def format(number)
+    number == 0 ? "" : '%.2f' % number
   end
 
 end
