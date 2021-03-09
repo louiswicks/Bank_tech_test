@@ -9,12 +9,12 @@ class BankAccount
   end
 
   def deposit(amount)
-    @balance += amount
+    increase_balance(amount)
     @transactions << [Time.now.strftime("%d/%m/%Y"), amount, 0, @balance]
   end
 
   def withdraw(amount)
-    @balance -= amount
+    decrease_balance(amount)
     @transactions << [Time.now.strftime("%d/%m/%Y"), 0, -amount, @balance]
   end
 
@@ -34,6 +34,14 @@ class BankAccount
 
   def format(number)
     number == 0 ? "" : '%.2f' % number
+  end
+
+  def increase_balance(amount)
+    @balance += amount
+  end
+
+  def decrease_balance(amount)
+    @balance -= amount
   end
 
 end
