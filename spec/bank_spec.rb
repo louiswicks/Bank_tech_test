@@ -34,9 +34,9 @@ describe BankAccount do
       account.deposit(10)
       account.withdraw(3)
       msg = "Date || Credit || Debit || Balance\n"\
-            "09/03/2021 || -3 || 17\n"\
-            "09/03/2021 || 10 || 20\n"\
-            "09/03/2021 || 10 || 10\n\n"
+            "09/03/2021 || 0 || -3 || 17\n"\
+            "09/03/2021 || 10 || 0 || 20\n"\
+            "09/03/2021 || 10 || 0 || 10\n\n"
       # expect(account.statement()).to include('Date || Credit || Debit || Balance')
       expect { account.statement() }.to output(msg).to_stdout
     end
