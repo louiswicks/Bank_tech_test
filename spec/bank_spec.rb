@@ -31,9 +31,9 @@ describe BankAccount do
       account.deposit(10)
       account.withdraw(3)
       msg = "Date || Credit || Debit || Balance\n"\
-            "09/03/2021 ||  || -3.00 || 17.00\n"\
-            "09/03/2021 || 10.00 ||  || 20.00\n"\
-            "09/03/2021 || 10.00 ||  || 10.00\n\n"
+            "#{Time.now.strftime('%d/%m/%Y')} ||  || 3.00 || 17.00\n"\
+            "#{Time.now.strftime('%d/%m/%Y')} || 10.00 ||  || 20.00\n"\
+            "#{Time.now.strftime('%d/%m/%Y')} || 10.00 ||  || 10.00\n\n"
       expect { account.statement }.to output(msg).to_stdout
     end
   end

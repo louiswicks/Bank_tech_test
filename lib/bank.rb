@@ -50,6 +50,6 @@ class BankAccount
   end
 
   def save_debit_transaction(amount)
-    @transactions << [Time.now.strftime('%d/%m/%Y'), 0, -amount, @balance]
+    @transactions << [Time.now.strftime('%d/%m/%Y'), 0, amount, @balance]
   end
 end
