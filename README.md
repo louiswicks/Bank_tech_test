@@ -8,6 +8,7 @@ First attempt at Makers Bank Tech Test.
 * Deposits, withdrawal.
 * Account statement (date, amount, balance) printing.
 * Data can be kept in memory (it doesn't need to be stored to a database or anything).
+
 ## Acceptance criteria
 
 Given a client makes a deposit of 1000 on 10-01-2012
@@ -26,6 +27,12 @@ Then she would see
 ## Approach
 
 I spent a large proportion of my time planning. I broke the requirements down into manageable user stories and further dissected the user stories into their various objects and verbs. This gave me a better idea of what the classes and methods might look like. Furthermore, I thought it might be useful to diagram my class and the relationships it has and wrote some pseudo code to outline the structure of what my code might look like.
+
+## Edge cases
+
+  At the beginning of the project we were told to not go above what the requirements have set to us, I've found this rule/line quite tricky to follow. I understand why we shouldn't do additional, but what I've struggled with is what is classed as 'additional' when the requirements are so straightforward and sometimes vague. Perhaps, this is something I should have asked one of the coaches? However, I felt this has made my implementation of edge cases quite hard, for example, should I have set a default withdrawal limit when the requirements did not ask me to?
+
+  I've raised this issue in my README to try and help those reading to understand what were some of the things I was thinking about when planning and writing my code.
 
 # Planning, User Stories and Diagrams
 
@@ -96,7 +103,7 @@ I spent a large proportion of my time planning. I broke the requirements down in
   $ bundle install
   $ irb
   ```
-  
+
   > require './lib/bank.rb'
 
   Now we will want to make instantiate a bank account!
