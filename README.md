@@ -2,7 +2,7 @@
 First attempt at Makers Bank Tech Test
 
 
-##User Stories:
+## User Stories:
 
 1.          As an account holder,
             In order to see my account history,
@@ -16,7 +16,7 @@ First attempt at Makers Bank Tech Test
             In order to take out money,
             I would like to be able to make withdrawals.
 
-##Pseudo code for potential Classes, attributes and methods:
+## Pseudo code for potential Classes, attributes and methods:
 
             ```
             class BankAccount
@@ -42,7 +42,7 @@ First attempt at Makers Bank Tech Test
             end
             ```
 
-##Interactions between nouns and verbs:
+## Interactions between nouns and verbs:
             Nouns:                 Property or Owner:
             BankAccount/Account    Owner
             Date                   Property
@@ -55,4 +55,4 @@ First attempt at Makers Bank Tech Test
             Deposit             BankAccount          Changes the Amount&Balance
             Withdraw            BankAccount          Changes the Amount&Balance
 
-##Class Diagrams:
+## Class Diagrams:
