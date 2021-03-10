@@ -15,12 +15,14 @@ And a deposit of 2000 on 13-01-2012
 And a withdrawal of 500 on 14-01-2012
 When she prints her bank statement
 Then she would see
+
     ```
     date || credit || debit || balance
     14/01/2012 || || 500.00 || 2500.00
     13/01/2012 || 2000.00 || || 3000.00
     10/01/2012 || 1000.00 || || 1000.00
     ```
+    
 ## Approach
 
 I spent a large proportion of my time planning. I broke the requirements down into manageable user stories and further dissected the user stories into their various objects and verbs. This gave me a better idea of what the classes and methods might look like. Furthermore, I thought it might be useful to diagram my class and the relationships it has and wrote some pseudo code to outline the structure of what my code might look like.
