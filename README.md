@@ -23,7 +23,7 @@ Then she would see
     ```
 ## Approach
 
-I spent a large proportion of my time working on this Tech test planning. I broke the requirements down into manageable user stories and then further dissected the user stories into there various objects and verbs. This gave me a better idea of what the classes and methods might look like. Finally, I thought it might be useful to Diagram what my class might look like and the relationships it has and some pseudo code to outline the structure of what my code might look like.
+I spent a large proportion of my time planning. I broke the requirements down into manageable user stories and further dissected the user stories into their various objects and verbs. This gave me a better idea of what the classes and methods might look like. Furthermore, I thought it might be useful to diagram my class and the relationships it has and wrote some pseudo code to outline the structure of what my code might look like.
 
 # Planning, User Stories and Diagrams
 
@@ -57,7 +57,7 @@ I spent a large proportion of my time working on this Tech test planning. I brok
 
 ## Class Diagrams:
 
-          ![BankAccount Class Diagram](https://playground.diagram.codes/d/class_diag)
+![BankAccount Class Diagram](https://playground.diagram.codes/d/class_diag)
 
 ## Pseudo code for potential Classes, attributes and methods:
 
