@@ -22,7 +22,7 @@ class BankAccount
   def statement
     print_header
     output = @transactions.reverse.map do |transaction|
-      puts "#{transaction[0]} || #{format(transaction[1])} || #{format(transaction[2])} || #{format(transaction[3])}"
+      puts "#{transaction[0]} || #{rm_zero(transaction[1])} || #{rm_zero(transaction[2])} || #{rm_zero(transaction[3])}"
     end
     puts output.join('')
   end
@@ -33,8 +33,8 @@ class BankAccount
     puts 'Date || Credit || Debit || Balance'
   end
 
-  def format(number)
-    number.zero? ? '' : '%.2f' % number
+  def rm_zero(number)
+    number.zero? ? '' : format('%.2f', number)
   end
 
   def increase_balance(amount)
