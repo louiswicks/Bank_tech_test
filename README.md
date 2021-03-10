@@ -16,6 +16,8 @@ First attempt at Makers Bank Tech Test
             In order to take out money,
             I would like to be able to make withdrawals.
 
+# Planning and Diagrams
+
 ## Pseudo code for potential Classes, attributes and methods:
 
             ```
