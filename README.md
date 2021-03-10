@@ -91,10 +91,12 @@ I spent a large proportion of my time planning. I broke the requirements down in
 
   First clone this project, then navigate to the project's directory. Once you're there run bundle install to install the necessary gems.
 
+  ```
   $ cd bank-tech-test
   $ bundle install
+  ```
 
-  Next you will need to start IRB and require the BankAccount.rb file.
+  Next you will need to start IRB and require the bank.rb file.
 
   $ irb
   > require './lib/bank.rb'
