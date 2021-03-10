@@ -85,13 +85,33 @@ I spent a large proportion of my time planning. I broke the requirements down in
               end
 
             end
-        
+
 
 ## Quickstart
 
-  First clone this repo! Then:
+  First clone this project, then navigate to the project's directory. Once you're there run bundle install to install the necessary gems.
 
-  ```
-  > bundle install
-  > rspec #to show all tests are passing
-  ```
+  $ cd bank-tech-test
+  $ bundle install
+
+  Next you will need to start IRB and require the BankAccount.rb file.
+
+  $ irb
+  > require './lib/bank.rb'
+
+  Now we will want to make instantiate a bank account!
+
+  > account = BankAccount.new
+
+  Once you have a bank account, feel free to deposit and withdraw, go crazy! Both deposit and withdraw take an integer as an argument.
+
+  > account.deposit(100)
+  > account.withdraw(50)
+
+  You can withdraw funds past zero and go minus.
+
+  You can also print your statement.
+
+  > account.statement
+
+  That's everything!
