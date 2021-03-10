@@ -2,7 +2,7 @@
 First attempt at Makers Bank Tech Test
 
 
-User Stories:
+##User Stories:
 
 1.          As an account holder,
             In order to see my account history,
@@ -15,3 +15,44 @@ User Stories:
 3.          As an account holder,
             In order to take out money,
             I would like to be able to make withdrawals.
+
+##Pseudo code for potential Classes, attributes and methods:
+
+            ```
+            class BankAccount
+
+            def initialize
+              @date = date
+              @amount = amount # withdrwing/depositing
+              @balance = balance
+            end
+
+            def deposit(amount)
+
+            end
+
+            def withdraw(amount)
+
+            end
+
+            def print()
+
+            end
+
+            end
+            ```
+
+##Interactions between nouns and verbs:
+            Nouns:                 Property or Owner:
+            BankAccount/Account    Owner
+            Date                   Property
+            Amount                 Property
+            Balance                Property
+            Deposits               Property
+            Withdrawals            Property
+
+            Actions:            Owned By:            Changes:
+            Deposit             BankAccount          Changes the Amount&Balance
+            Withdraw            BankAccount          Changes the Amount&Balance
+
+##Class Diagrams:
