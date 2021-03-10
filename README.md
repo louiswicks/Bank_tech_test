@@ -89,16 +89,14 @@ I spent a large proportion of my time planning. I broke the requirements down in
 
 ## Quickstart
 
-  First clone this project, then navigate to the project's directory. Once you're there run bundle install to install the necessary gems.
+  First clone this project, then navigate to the project's directory. Once you're there run bundle install to install the necessary gems. Next you will need to start IRB and require the bank.rb file.
 
   ```
   $ cd bank-tech-test
   $ bundle install
-  ```
-
-  Next you will need to start IRB and require the bank.rb file.
-
   $ irb
+  ```
+  
   > require './lib/bank.rb'
 
   Now we will want to make instantiate a bank account!
