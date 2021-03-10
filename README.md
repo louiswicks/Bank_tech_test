@@ -22,24 +22,24 @@ First attempt at Makers Bank Tech Test
 
             ```
             class BankAccount
+              
+              def initialize
+                @date = date
+                @amount = amount # withdrwing/depositing
+                @balance = balance
+              end
 
-            def initialize
-              @date = date
-              @amount = amount # withdrwing/depositing
-              @balance = balance
-            end
+              def deposit(amount)
 
-            def deposit(amount)
+              end
 
-            end
+              def withdraw(amount)
 
-            def withdraw(amount)
+              end
 
-            end
+              def print()
 
-            def print()
-
-            end
+              end
 
             end
             ```
