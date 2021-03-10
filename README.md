@@ -22,7 +22,7 @@ First attempt at Makers Bank Tech Test
 
             ```
             class BankAccount
-              
+
               def initialize
                 @date = date
                 @amount = amount # withdrwing/depositing
@@ -58,3 +58,5 @@ First attempt at Makers Bank Tech Test
             Withdraw            BankAccount          Changes the Amount&Balance
 
 ## Class Diagrams:
+
+  ![BankAccount Class Diagram ](/downloads/diagram.svg)
